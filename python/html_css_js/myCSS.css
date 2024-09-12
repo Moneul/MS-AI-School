@@ -1,0 +1,156 @@
+body {
+        
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0c0c0c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+section {
+    padding: 20px;
+}
+h2 {
+    color: #00ff00;
+}
+.flavors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.flavor {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+.flavor img {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+.can {
+    position: relative;
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.can:hover {
+    transform: scale(1.1);
+}
+video {
+    display: block;
+    margin: auto; /* 가운데 정렬 */
+    max-width: 100%; /* 화면에 맞게 비디오 크기 조정 */
+    height: auto;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+h3{
+    text-align: center;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+.modal {
+    display: none; /* 처음에는 보이지 않음 */
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 흐리게 */
+}
+/* php창 */
+.modal-content {
+    background-color: #111;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-img {
+    background-color: black;
+    margin: 15px auto;
+    height: 500px;
+    width: 500px;
+    float: left;
+    margin-left: 75px;
+    margin-top: 50px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+.table-container {
+    overflow: hidden; /* 테이블이 컨테이너를 넘어가지 않도록 설정 */
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse; /* 테이블 경계선 병합 */
+    transform: skewX(-25deg); /* 좌우 기울이기 */
+    transform-origin: top left; /* 회전 기준점을 설정 (기본값은 중심) */
+    background: linear-gradient(135deg, #2bf10d, #c6f01f);
+    text-align: center;
+}
+
+th, td {
+    width: 200px;
+    border: 1px solid rgb(255, 255, 255); /* 테두리 설정 */
+    padding: 8px; /* 패딩 설정 */
+    text-align: center; /* 텍스트 정렬 */
+    font-size: 20px; /* 글자 크기 조절 */
+    transform: none; /* 글자는 기울어지지 않도록 설정 */
+    color: white;
+    text-shadow: 1px 1px gray;
+    font-weight: bold;
+}
+
+/* 링크의 기본 데코레이션 제거 */
+.no-decoration {
+    color: inherit;         /* 부모 요소의 글자 색상 상속 */
+    text-decoration: none;  /* 밑줄 제거 */
+    cursor: pointer;        /* 클릭할 수 있음을 보여줌 */
+}
+
+.no-decoration:hover {
+    color: inherit;         /* 호버 상태에서도 색상 유지 */
+    text-decoration: none;  /* 밑줄 유지 */
+}
